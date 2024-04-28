@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lead Information</title>
+    </head>
+    <body>
+        <h1>Your Lead Information</h1>
+        <ul>
+            {% for lead in user_leads %}
+            <li>{{lead.company_name}}</li>
+            {% empty %}
+            <li>No leads found</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
